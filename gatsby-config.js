@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `My Gatsby Starter`,
+    description: `A boilerplate with my go-to libraries pre-installed.`,
+    author: `David Andrews`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -11,6 +11,14 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    "gatsby-plugin-catch-links",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
       },
     },
     `gatsby-transformer-sharp`,
@@ -27,6 +35,23 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-transition-link`,
+    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-transformer-remark",
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 900,
+            },
+          },
+        ],
+      },
+    },
+    "gatsby-remark-copy-linked-files",
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
