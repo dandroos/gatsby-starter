@@ -1,7 +1,8 @@
 ![Gatsby logo](https://seeklogo.com/images/G/gatsby-logo-1A245AD37F-seeklogo.com.png)
 
 
-<!-- omit in toc --> # Gatsby Starter
+
+# Gatsby Starter <!-- omit in toc --> 
 
 This is a boilerplate to get you up and running quickly, so you can spend less time faffing and more time creating!
 
