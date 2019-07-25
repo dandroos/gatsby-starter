@@ -1139,8 +1139,12 @@ $navbar-padding-y: 1rem;
 @import "../../node_modules/bootstrap/scss/type";
 @import "../../node_modules/bootstrap/scss/utilities";
 
+body{
+  cursor: default;
+}
+
 .jumbotron{
-  min-height: 90vh;
+  min-height: 88vh;
 }
 .logo {
   animation: spin 5s infinite 2s;
@@ -1161,3 +1165,4 @@ $navbar-padding-y: 1rem;
     transform: rotate(360deg);
   }
 }
+

@@ -1,97 +1,52 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+![Gatsby logo](https://seeklogo.com/images/G/gatsby-logo-1A245AD37F-seeklogo.com.png)
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+<!-- omit in toc --> # Gatsby Starter
 
-## 🚀 Quick start
+This is a boilerplate to get you up and running quickly, so you can spend less time faffing and more time creating!
 
-1.  **Create a Gatsby site.**
+- [Get started!](#get-started)
+- [What's included?](#whats-included)
+- [Cool! Anything else?](#cool-anything-else)
+- [Great! What?....more?!](#great-whatmore)
+- [A note about the dev server](#a-note-about-the-dev-server)
+- [When should I use this starter?](#when-should-i-use-this-starter)
+## Get started!
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+```
+git clone https://github.com/dandroos/gatsby-starter.git
+```
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+## What's included?
 
-1.  **Start developing.**
+It is a straightforward Gatsby install that I have cleaned up and added some starter content to.
 
-    Navigate into your new site’s directory and start it up.
+It comes with the following NPM packages built-in...
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+- [Bootstrap](https://getbootstrap.com/) ([bootstrap](https://github.com/twbs/bootstrap), [reactstrap](https://github.com/reactstrap/reactstrap), [jquery](https://github.com/jquery/jquery), and [popper.js](https://github.com/FezVrasta/popper.js))
+- [React Reveal](https://www.react-reveal.com/) ([react-reveal](https://github.com/rnosov/react-reveal))
+- [React Spring](https://www.react-spring.io/) ([react-spring](https://github.com/react-spring/react-spring))
+- [React Anchor Link Smooth Scroll](https://github.com/mauricevancooten/react-anchor-link-smooth-scroll)
 
-1.  **Open the source code and start editing!**
+It also comes with some nifty Gatsby plugins, which I have configured so that they are ready to use!  A few 'key mentions'!...
 
-    Your site is now running at `http://localhost:8000`!
+- [gatsby-remark-images](https://www.gatsbyjs.org/packages/gatsby-remark-images/)
+- [gatsby-plugin-transition-link](https://www.gatsbyjs.org/packages/gatsby-plugin-transition-link/)
+- [gatsby-remark-copy-linked-files](https://www.gatsbyjs.org/packages/gatsby-remark-copy-linked-files/)
+- [gatsby-plugin-catch-links](https://www.gatsbyjs.org/packages/gatsby-plugin-catch-links/)
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+## Cool! Anything else?
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Yes, my friend! I have also set up the SASS development environment as well. It imports all of Bootstrap's components separately, so you can comment out/delete the ones you don't need. Take a look at the style.scss file in the components directory. I have set up the Gatsby project to import this file (Gatsby can compile SASS with the help of their plugin - which I have installed!)
 
-## 🧐 What's inside?
+## Great! What?....more?!
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+Yep! I've also set up a very basic Markdown blog, which you can tweak into a news or portfolio feature. I have set it up with gatsby-image to make use of the amazing image optimisation built into Gatsby.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## A note about the dev server
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Where you would normally type `gatsby develop` to start a local development environment, you should type `npm start` as I have amended the script to start a server that can be accessed by other machines on your network.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+## When should I use this starter?
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
-
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
-
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
-
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
-
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
-
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
-
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
-
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
-
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
-
-12. **`README.md`**: A text file containing useful reference information about your project.
-
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+I would suggest using this for clients that need more than a single landing page and don't need much dynamic content.  e.g. creatives (artists, photographers, musicians, graphic designers) and small businesses.
